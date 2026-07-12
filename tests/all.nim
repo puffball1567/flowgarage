@@ -7,3 +7,4 @@ include test_extension
 include test_jsonio
 include test_sources
 include test_package
+include test_memory_model
