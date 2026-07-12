@@ -6,7 +6,7 @@ It is part of the **FlowBrigade Toolkit**.
 
 ## Status
 
-FlowGarage v0.1.0 is focused on deterministic in-process artifact packaging.
+FlowGarage v0.1.1 is focused on deterministic in-process artifact packaging.
 Within that scope, it provides:
 
 - artifact and report bundle primitives
@@ -96,7 +96,11 @@ FlowGarage only depends on Nim's standard library.
 nimble test
 nimble examples
 nimble bench
+nimble leak
 ```
+
+`nimble leak` builds the ARC release leak probe and runs it under Valgrind,
+failing on definite or indirect leaks.
 
 ## Intellectual Property Notes
 
